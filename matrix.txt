@@ -1,0 +1,325 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	const int rows = 10, columns = 10;
+	int matrix1[rows][columns], matrix2[rows][columns];
+
+	cout << "welcom to matrix solver \nmade by DEEMA \ni hope it will be usefull for you\nstart with enter ur first matrix rows and columns rxc: \n";
+
+	cout << "\nenter rows then columns: " << endl;
+	int ruser1, cuser1,ruser2, cuser2;
+	cin >> ruser1 >> cuser1;
+
+	cout << "enter numbers: " << endl;
+	for (int i = 0;i < ruser1;i++) {
+		for (int j = 0;j < cuser1;j++) {
+			cin >> matrix1[i][j];
+		}
+	}
+
+	cout << endl << "your first matrix :" << endl;
+	for (int i = 0;i < ruser1;i++) {
+		for (int j = 0;j < cuser1;j++) {
+			cout<< matrix1[i][j]<<" ";
+		}
+		cout << endl;
+	}
+
+	cout<<"#if you want enter second matrix enter 1 "<<endl
+		<<"#if you want check if matrix1 squar enter 2 "<<endl
+		<<"#if you want check if matrix is zero - one matrix and if it identity enter 3"<<endl
+		<<"#if you want transposes enter 4"<<endl
+		<<"#if you want check symmetric enter 5"<<endl
+		<<"#if you want power matrix enter 6\n"
+		<<"#if uou want exit enter 0\n";
+
+	int enter1;
+	bool flag1 = true,flag2 = true;
+	while (flag1) {
+		cin >> enter1;
+		if (enter1 == 1) {
+			cout << "enter rows then columns: " << endl;
+			cin >> ruser2 >> cuser2;
+			cout << "enter numbers: " << endl;
+			for (int i = 0;i < ruser2;i++) {
+				for (int j = 0;j < cuser2;j++)
+					cin >> matrix2[i][j];
+			}
+			cout << endl << "your second matrix :" << endl;
+			for (int i = 0;i < ruser2;i++) {
+				for (int j = 0;j < cuser2;j++) {
+					cout << matrix2[i][j] << " ";
+				}
+				cout << endl;
+			}
+
+			cout << "\n#if you want do addition marix1 + matrix2 enter 7\n"
+				<< "#if you want do multiplication marix1 * matrix2 enter 8\n"
+				<< "#if you want exit enter 0\n";
+			int enter2;
+			while (flag2) {
+			cin >> enter2;
+			if (enter2 == 7) {
+				int add[rows][columns];
+				if (ruser1 == ruser2 && cuser1 == cuser2) {
+					for (int i = 0;i < ruser2;i++) {
+						for (int j = 0;j < cuser2;j++) {
+							add[i][j] = matrix1[i][j] + matrix2[i][j];
+						}
+					}
+					cout << "\nmatrix1= \n";
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							cout << matrix1[i][j] << " ";
+						}
+						cout << endl;
+					}
+					cout << "matrix2= \n";
+					for (int i = 0;i < ruser2;i++) {
+						for (int j = 0;j < cuser2;j++) {
+							cout << matrix2[i][j] << " ";
+						}
+						cout << endl;
+					}
+					cout << "matrix1 + matrix2 =\n";
+					for (int i = 0;i < ruser2;i++) {
+						for (int j = 0;j < cuser2;j++) {
+							cout << add[i][j] << " ";
+						}
+						cout << endl;
+					}
+				}
+				else
+					cout << "can not do addition bcz rxc in matrix1 != rxc in matrix2\n";
+			}
+			if (enter2 == 8) {
+				int mult[rows][columns];
+				if (cuser1 == ruser2) {
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser2;j++) {
+							mult[i][j] = 0;
+						}
+					}
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser2;j++) {
+							for (int k = 0; k < cuser1; ++k)
+								mult[i][j] += matrix1[i][k] * matrix2[k][j];
+						}
+					}
+					cout << "\nmatrix1= \n";
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							cout << matrix1[i][j] << " ";
+						}
+						cout << endl;
+					}
+					cout << "matrix2= \n";
+					for (int i = 0;i < ruser2;i++) {
+						for (int j = 0;j < cuser2;j++) {
+							cout << matrix2[i][j] << " ";
+						}
+						cout << endl;
+					}
+					cout << "matrix1 * matrix2 =\n";
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser2;j++) {
+							cout << mult[i][j] << " ";
+						}
+						cout << endl;
+					}
+				}
+				else
+					cout << "can not do multiplication bcz columns in matrix1 != rows in matrix2 \n";
+			}
+			if (enter2 == 0)
+				flag2 = false;
+			}
+		}
+		if (enter1 == 2) {
+			if (ruser1 == cuser1)
+				cout << endl << "yes its squar matrix " << endl;
+			else
+				cout << "\nno it is not squar matrix\n";
+		}
+
+		bool zerone = true, identity = true, diagonal = true;
+		if (enter1 == 3) {
+			if (enter1 == 3) {
+				for (int i = 0;i < ruser1;i++) {
+					for (int j = 0;j < cuser1;j++) {
+						if (matrix1[i][j] != 0 && matrix1[i][j] != 1) {
+							zerone = false;
+							break;
+						}
+					}
+					if (zerone == false)
+						break;
+				}
+			}
+			if (zerone == false)
+				cout << "\nit is not zero-one matrix\n ";
+			else {
+				cout << "\nit is zero-one matrix\n";
+				if (ruser1 == cuser1) {
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							if (i == j && matrix1[i][j] != 1)
+								diagonal = false;
+							else if (i != j && matrix1[i][j] != 0)
+								identity = false;
+						}
+						if (diagonal == false || identity == false)
+							break;
+					}
+					if (identity == true && diagonal == true)
+						cout << "\nand it is identity matrix\n";
+					else
+						cout << "\nand it is not identity matrix bcs it is not only the diagonal = 1 \n";
+				}
+				else {
+					cout << "\nand it is not identity matrix bcz rows != column\n";
+				}
+			}
+		}
+
+		int trans[rows][columns];
+		if (enter1 == 4) {
+			for (int i = 0;i < ruser1;i++) {
+				for (int j = 0;j < cuser1;j++) {
+					trans[j][i] = matrix1[i][j];
+				}
+			}
+			for (int i = 0;i < cuser1;i++) {
+				for (int j = 0;j < ruser1;j++) {
+					cout << trans[i][j] << " ";
+				}
+				cout << endl;
+			}
+		}
+
+		bool sym = true;
+		if (enter1 == 5) {
+			if (ruser1 == cuser1) {
+				for (int i = 0;i < ruser1;i++) {
+					for (int j = 0;j < cuser1;j++) {
+						trans[j][i] = matrix1[i][j];
+					}
+				}
+				for (int i = 0;i < ruser1;i++) {
+					for (int j = 0;j < cuser1;j++) {
+						if (trans[i][j] != matrix1[i][j]) {
+							sym = false;
+							break;
+						}
+					}
+					if (sym == false)
+						break;
+				}
+				if (sym == false)
+					cout << "\nit is not symmetric matrix\n";
+				else if (sym == true)
+					cout << "\nit is symmetric matrix\n";
+			}
+			else
+				cout << "\ncan not be symmetric bcz it is not squar matrix\n";
+		}
+
+		if(enter1==6){
+			int p,power2[rows][columns],power3[rows][columns],power4[rows][columns],power5[rows][columns];
+			cout << "\nenter power only from(0-3)\n";
+			cin >> p;
+			if (ruser1 == cuser1) {
+				switch (p) {
+				case 0:
+					int zeon[rows][columns];
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							zeon[i][j] = matrix1[i][j];
+						}
+					}
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							if (i == j)
+								zeon[i][j] = 1;
+							else if (i != j)
+								zeon[i][j] = 0;
+						}
+					}
+						cout << endl << "power 0 for matrix1 =" << endl;
+						for (int i = 0;i < ruser1;i++) {
+							for (int j = 0;j < cuser1;j++) {
+								cout << zeon[i][j] << " ";
+							}
+							cout << endl;
+						}
+						break;
+				case 1:
+					cout << endl << "power 1 for matrix1 =" << endl;
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							cout << matrix1[i][j] << " ";
+						}
+						cout << endl;
+					}
+					break;
+				case 2:
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							power2[i][j] = 0;
+						}
+					}
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							for (int k = 0; k < cuser1; ++k)
+								power2[i][j] += matrix1[i][k] * matrix1[k][j];
+						}
+					}
+					cout << "power 2 for matrix1 =\n";
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							cout << power2[i][j] << " ";
+						}
+						cout << endl;
+					}
+					break;
+				case 3:
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							power2[i][j] = 0;
+							power3[i][j] = 0;
+						}
+					}
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							for (int k = 0; k < cuser1; ++k)
+								power2[i][j] += matrix1[i][k] * matrix1[k][j];
+						}
+					}
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							for (int k = 0; k < cuser1; ++k)
+								power3[i][j] += power2[i][k] * matrix1[k][j];
+						}
+					}
+					cout << "power 3 for matrix1 =\n";
+					for (int i = 0;i < ruser1;i++) {
+						for (int j = 0;j < cuser1;j++) {
+							cout << power3[i][j] << " ";
+						}
+						cout << endl;
+					}
+					break;
+				default:
+					cout << "\nsorry we only can do to power 3\n";
+					break;
+				}
+			}
+			else
+				cout << "\ncan not do power bcz it is no squar matrix\n";
+		}
+
+		if (enter1 == 0)
+			flag1 = false;
+	}
+}
