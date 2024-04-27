@@ -31,9 +31,9 @@
 	&emsp; 
 	<img height="35" alt="JavaScript" src="assets/js.png"> 
 	&emsp; 
-	<a href="https://tailwindcss.com/"><img height="30" alt="tailwind" src="assets/tailwind.svg"> </a>
+	<a href="https://tailwindcss.com/"><img height="30" alt="tailwind" src="assets/tailwind.svg"></a>
 	&emsp; 
-	<img height="30" alt="nodejs" src="assets/nodejsLight.svg"> 
+	<a href="https://nodejs.org/en"><img height="30" alt="nodejs" src="assets/nodejsLight.svg"></a>
 </p>
 
 <br> 
