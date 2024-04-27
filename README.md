@@ -27,7 +27,7 @@
 	&emsp; 
 	<a href="https://www.w3schools.com/html/default.asp"><img height="35" alt="html" src="assets/html-5.png"></a>
  	&emsp; 
-	<a hreh="https://www.w3schools.com/css/default.asp"><img height="35" alt="css" src="assets/css-3.png"></a> 
+	<a href="https://www.w3schools.com/css/default.asp"><img height="35" alt="css" src="assets/css-3.png"></a> 
 	&emsp; 
 	<a href="https://www.w3schools.com/js/"><img height="35" alt="JavaScript" src="assets/js.png"></a>
 	&emsp; 
