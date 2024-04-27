@@ -1,4 +1,4 @@
-<h1 align="center">Hola visitor, Welcome to my Github Profile! <img height="50" src="assets/wave.png"></h1>
+<h1 align="center">Hello visitor, Welcome to my Github Profile! <img height="55" src="assets/cat.png"></h1>
 
 
 - 👋 Hi, I’m @Dimah02
