@@ -1,3 +1,6 @@
+<h1 align="center">Hola visitor, Welcome to my Github Profile !<img height="50" src="assets/hello.gif"></h1>
+
+
 - 👋 Hi, I’m @Dimah02
 - 👀 I’m interested in Competitive Programming...
 - 🌱 I’m currently learning C++,Java...
