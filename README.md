@@ -29,8 +29,16 @@
 
 
 <p align="center"> 
-  &emsp; 
-  <img height="55" src="assets/bye.png"> 
-
-
+	&emsp; 
+	<img height="35" alt="c++" src="assets/c-.png"> 
+	&emsp; 
+	<img height="35" alt="html" src="assets/html-5.png"> 
+ 	&emsp; 
+	<img height="35" alt="css" src="assets/css-3.png"> 
+	&emsp; 
+	<img height="35" alt="JavaScript" src="assets/js.png"> 
+	&emsp; 
+	<img height="35" alt="tailwind" src="assets/tailwind.svg"> 
+	&emsp; 
+	<img height="35" alt="JavaScript" src="assets/js.png"> 
 </p>
