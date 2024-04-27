@@ -35,9 +35,9 @@
 	&emsp; 
 	<a href="https://nodejs.org/en"><img height="30" alt="nodejs" src="assets/nodejsLight.svg"></a>
 	&emsp; 
-	<a href="https://git-scm.com/"><img height="30" alt="git" src="assets/social.png"></a>
+	<a href="https://git-scm.com/"><img height="35" alt="git" src="assets/social.png"></a>
 	&emsp; 
-	<a href="https://www.json.org/json-en.html"><img height="30" alt="JSON" src="assets/json.png"></a>
+	<a href="https://www.w3schools.com/js/js_json_intro.asp"><img height="35" alt="JSON" src="assets/json.png"></a>
 </p>
 
 <br> 
