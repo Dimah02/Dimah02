@@ -17,13 +17,6 @@
   
 <br>
 
-## <img height="35" src="assets/chat.png"> Connect with me
-
-<p align="center">
-	<a href="mailto:dimahmehdawi@gmail.com"><img img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
- <a href="https://www.linkedin.com/in/dimah-mehdawi-03266723a/"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-
-
 
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif"  height="35"> My Skills
 
@@ -38,7 +31,15 @@
 	&emsp; 
 	<img height="35" alt="JavaScript" src="assets/js.png"> 
 	&emsp; 
-	<img height="30" alt="tailwind" src="assets/tailwind.svg"> 
+	<a href="https://tailwindcss.com/"><img height="30" alt="tailwind" src="assets/tailwind.svg"> </a>
 	&emsp; 
-	<img height="35" alt="nodejs" src="assets/nodejsLight.svg"> 
+	<img height="30" alt="nodejs" src="assets/nodejsLight.svg"> 
 </p>
+
+<br> 
+
+## <img height="35" src="assets/chat.png"> Connect with me
+
+<p align="center">
+	<a href="mailto:dimahmehdawi@gmail.com"><img img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
+ <a href="https://www.linkedin.com/in/dimah-mehdawi-03266723a/"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
