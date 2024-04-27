@@ -34,6 +34,10 @@
 	<a href="https://tailwindcss.com/"><img height="30" alt="tailwind" src="assets/tailwind.svg"></a>
 	&emsp; 
 	<a href="https://nodejs.org/en"><img height="30" alt="nodejs" src="assets/nodejsLight.svg"></a>
+	&emsp; 
+	<a href="https://git-scm.com/"><img height="30" alt="git" src="assets/social.png"></a>
+	&emsp; 
+	<a href="https://www.json.org/json-en.html"><img height="30" alt="nodejs" src="assets/json.svg"></a>
 </p>
 
 <br> 
