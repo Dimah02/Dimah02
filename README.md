@@ -37,7 +37,7 @@
 	&emsp; 
 	<a href="https://git-scm.com/"><img height="30" alt="git" src="assets/social.png"></a>
 	&emsp; 
-	<a href="https://www.json.org/json-en.html"><img height="30" alt="nodejs" src="assets/json.svg"></a>
+	<a href="https://www.json.org/json-en.html"><img height="30" alt="JSON" src="assets/json.png"></a>
 </p>
 
 <br> 
