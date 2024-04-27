@@ -17,4 +17,4 @@
   
 <br>
 
-## <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true" width="10%"> Connect with me
+## <img height="40" src="assets/chat.png"> Connect with me
