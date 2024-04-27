@@ -23,13 +23,13 @@
 
 <p align="center"> 
 	&emsp; 
-	<img height="35" alt="c++" src="assets/c-.png"> 
+	<a href="https://www.w3schools.com/cpp/default.asp"><img height="35" alt="c++" src="assets/c-.png"></a>
 	&emsp; 
-	<img height="35" alt="html" src="assets/html-5.png"> 
+	<a href="https://www.w3schools.com/html/default.asp"><img height="35" alt="html" src="assets/html-5.png"></a>
  	&emsp; 
-	<img height="35" alt="css" src="assets/css-3.png"> 
+	<a hreh="https://www.w3schools.com/css/default.asp"><img height="35" alt="css" src="assets/css-3.png"></a> 
 	&emsp; 
-	<img height="35" alt="JavaScript" src="assets/js.png"> 
+	<a href="https://www.w3schools.com/js/"><img height="35" alt="JavaScript" src="assets/js.png"></a>
 	&emsp; 
 	<a href="https://tailwindcss.com/"><img height="30" alt="tailwind" src="assets/tailwind.svg"></a>
 	&emsp; 
