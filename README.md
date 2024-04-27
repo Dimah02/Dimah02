@@ -38,7 +38,7 @@
 	&emsp; 
 	<img height="35" alt="JavaScript" src="assets/js.png"> 
 	&emsp; 
-	<img height="35" alt="tailwind" src="assets/tailwind.svg"> 
+	<img height="30" alt="tailwind" src="assets/tailwind.svg"> 
 	&emsp; 
-	<img height="35" alt="JavaScript" src="assets/js.png"> 
+	<img height="35" alt="nodejs" src="assets/nodejsLight.svg"> 
 </p>
