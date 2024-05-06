@@ -8,7 +8,10 @@
 
 <br>
 
+
+<!---
 <picture> <img align="right" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzR4czhhenVycTd0eXc5aDAxZDVodnN3YWc0bHcwbWgwNWR5c3RveSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/M4NykXxUE0HAcK7UJ6/giphy.gif" width = 200px></picture>
+--->
 
 - :school: `Software engineering student` at Applied Science Private University.
 - 👩‍💻 Currently learning `Backend Development` with `Express`.
@@ -17,9 +20,7 @@
   
 <br>
 
-
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif"  height="35"> My Skills
-
 
 <p align="center"> 
 	&emsp; 
